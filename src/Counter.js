@@ -16,7 +16,9 @@ export const Counter = () => {
       <button className="btn" onClick={handleClickAdd}>
         +1
       </button>
-      <h2>Count value: {count}</h2>
+      <h2>
+        Count value: {count} {count < 0 ? "es negativo" : "es positivo"}{" "}
+      </h2>
       <button className="btn" onClick={handleClickSubtract}>
         -1
       </button>
